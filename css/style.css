@@ -420,7 +420,7 @@ input[type="radio"].visually-hidden {
 .header__wrapper {
   position: relative;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
