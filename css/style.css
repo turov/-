@@ -455,6 +455,7 @@ input[type="radio"].visually-hidden {
   margin-right: 6px; }
 
 .header__logo span {
+  width: 68px;
   font-weight: bold;
   line-height: 28px;
   font-size: 24px;
@@ -991,7 +992,7 @@ input[type="radio"].visually-hidden {
 .slick-dots li:first-child button::before {
   content: 'F';
   position: absolute;
-  top: 0;
+  bottom: -7px;
   left: -32px;
   font-family: "Roboto", Arial, sans-serif;
   font-style: normal;
@@ -1003,7 +1004,7 @@ input[type="radio"].visually-hidden {
 .slick-dots li:last-child button::before {
   content: 'D';
   position: absolute;
-  top: 0;
+  bottom: -7px;
   right: -32px;
   font-family: "Roboto", Arial, sans-serif;
   font-style: normal;
