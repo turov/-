@@ -1,0 +1,93 @@
+.btn {
+  cursor: pointer;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+.btn--buy {
+  border: 1px solid #152DFF;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: transparent;
+  color: #152DFF;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 14px;
+  padding: 15px 34px 10px 32px;
+  transition: all 0.2s ease-in;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: #091ED5;
+    border-color: #091ED5;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: #091ED5;
+    border-color: #091ED5;
+    color: #ffffff;
+  }
+}
+
+.btn--buy-mobile {
+  outline: none;
+  display: none;
+
+  @media (max-width: 1035px) {
+    position: fixed;
+    bottom: 33px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    background: #152DFF;
+    border: 1px solid #152DFF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 448px;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+    color: #FFFFFF;
+    padding: 21px;
+    z-index: 4;
+    box-shadow: 0 4px 32px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.btn--buy-mobile-inactive {
+  display: none;
+}
+
+.btn--buy-mobile-only output {
+  font-size: 32px;
+}
+
+.btn--buy-mobile-only span {
+  font-weight: normal;
+  line-height: normal;
+  font-size: 16px;
+}
+
+.btn--form {
+  width: 100%;
+  border-radius: 4px;
+  background-color: #152DFF;
+  border: 1px solid #152DFF;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  padding: 13px 0 12px;
+  margin-top: 15px;
+  outline: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #091ED5;
+    border-color: #091ED5;
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,66 @@
+.menu-toggle {
+  position: relative;
+  z-index: 6;
+  display: block;
+  width: 36px;
+  height: 36px;
+  font-size: 0;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  margin-left: auto;
+  margin-right: 32px;
+  outline: none;
+
+  &:focus {
+    filter: drop-shadow(0 0 3px rgba(43, 92, 252, 0.5));
+  }
+
+  @media (min-width: 1035px) {
+    display: none;
+  }
+}
+
+.menu-toggle span {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  display: block;
+  width: 36px;
+  height: 4px;
+  background-color: #000000;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+}
+
+.menu-toggle span::before,
+.menu-toggle span::after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 4px;
+  background-color: #000000;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+}
+
+.menu-toggle span::before {
+  transform: translate(0, -13px);
+}
+
+.menu-toggle span::after {
+  transform: translate(0, 9px);
+}
+
+.nav--opened + .menu-toggle span {
+  width: 0;
+  height: 0;
+}
+
+.nav--opened + .menu-toggle span::before {
+  transform: translate(0, 0) rotate(45deg);
+}
+
+.nav--opened + .menu-toggle span::after {
+  transform: translate(0, -4px) rotate(-45deg);
+}

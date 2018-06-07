@@ -1,0 +1,61 @@
+img {
+  max-width: 100%;
+  display: block;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden,
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.mobile-hidden {
+  @media (max-width: 1036px) {
+    display: none;
+  }
+}
+
+.page {
+  width: 100%;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: normal;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  color: #2C2C3D;
+}
+
+.page--header-active {
+  padding-top: 98px;
+}
+
+.wrapper-black {
+  display: none;
+  width: 100%;
+  height: 200vh;
+  background: #000000;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+
+.wrapper-black--active {
+  display: block;
+  opacity: 0.25;
+}
