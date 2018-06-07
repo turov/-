@@ -474,8 +474,11 @@ input[type="radio"].visually-hidden {
   margin-left: 41px;
   letter-spacing: 0.4px;
   outline: none; }
-  .header__tel:hover, .header__tel:focus {
+  .header__tel:hover {
     color: #FF1515; }
+  .header__tel:focus {
+    -webkit-filter: drop-shadow(0 0 3px rgba(43, 92, 252, 0.5));
+            filter: drop-shadow(0 0 3px rgba(43, 92, 252, 0.5)); }
   @media (max-width: 1035px) {
     .header__tel {
       margin-left: 50px; } }
@@ -580,9 +583,12 @@ input[type="radio"].visually-hidden {
     .nav__link {
       font-size: 32px; } }
 
-.nav__item:hover .nav__link,
-.nav__link:focus {
+.nav__item:hover .nav__link {
   color: #152DFF; }
+
+.nav__link:focus {
+  -webkit-filter: drop-shadow(0 0 3px rgba(43, 92, 252, 0.5));
+          filter: drop-shadow(0 0 3px rgba(43, 92, 252, 0.5)); }
 
 .nav__cart {
   color: inherit;
@@ -598,8 +604,11 @@ input[type="radio"].visually-hidden {
       flex-shrink: 0;
   font-size: 18px;
   outline: none; }
-  .nav__cart:hover, .nav__cart:focus {
+  .nav__cart:hover {
     opacity: 0.5; }
+  .nav__cart:focus {
+    -webkit-filter: drop-shadow(0 0 3px rgba(43, 92, 252, 0.5));
+            filter: drop-shadow(0 0 3px rgba(43, 92, 252, 0.5)); }
   @media (max-width: 1035px) {
     .nav__cart {
       margin-left: 0;
@@ -715,10 +724,13 @@ input[type="radio"].visually-hidden {
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   outline: none; }
-  .btn--buy:hover, .btn--buy:focus {
+  .btn--buy:hover {
     background-color: #091ED5;
     border-color: #091ED5;
     color: #ffffff; }
+  .btn--buy:focus {
+    -webkit-filter: drop-shadow(0 0 8px rgba(43, 92, 252, 0.8));
+            filter: drop-shadow(0 0 8px rgba(43, 92, 252, 0.8)); }
   .btn--buy:active {
     background-color: #091ED5;
     border-color: #091ED5;
@@ -774,10 +786,13 @@ input[type="radio"].visually-hidden {
   padding: 13px 0 12px;
   margin-top: 15px;
   outline: none; }
-  .btn--form:hover, .btn--form:focus, .btn--form:active {
+  .btn--form:hover, .btn--form:active {
     background-color: #091ED5;
     border-color: #091ED5;
     color: #ffffff; }
+  .btn--form:focus {
+    -webkit-filter: drop-shadow(0 0 8px rgba(43, 92, 252, 0.8));
+            filter: drop-shadow(0 0 8px rgba(43, 92, 252, 0.8)); }
 
 /* Slider */
 .slick-slider {
@@ -882,28 +897,34 @@ input[type="radio"].visually-hidden {
   border: none;
   width: 8px;
   height: 8px;
-  left: -64px;
-  top: 191px;
+  left: -87px;
+  top: 169px;
   outline: none;
-  cursor: pointer; }
+  cursor: pointer;
+  padding: 30px; }
   .slick-prev::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+    width: 16px;
+    height: 14px;
     border: 0 solid transparent;
     border-top-width: 8px;
     border-bottom-width: 8px;
     border-right: 8px solid #152DFF; }
-  .slick-prev:focus::before, .slick-prev:hover::before {
+  .slick-prev:hover::before {
     border-right: 8px solid #FF1515; }
+  .slick-prev:focus {
+    -webkit-filter: drop-shadow(0 0 3px rgba(43, 92, 252, 0.5));
+            filter: drop-shadow(0 0 3px rgba(43, 92, 252, 0.5)); }
   @media (max-width: 1035px) {
     .slick-prev {
       top: auto;
-      bottom: 161px;
-      left: 1px; } }
+      bottom: 131px;
+      left: -23px; } }
 
 .slick-next {
   position: absolute;
@@ -913,28 +934,34 @@ input[type="radio"].visually-hidden {
   border: none;
   width: 8px;
   height: 8px;
-  right: -64px;
-  top: 191px;
+  right: -89px;
+  top: 169px;
   outline: none;
-  cursor: pointer; }
+  cursor: pointer;
+  padding: 30px; }
   .slick-next::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+    width: 16px;
+    height: 14px;
     border: 0 solid transparent;
     border-bottom-width: 8px;
     border-top-width: 8px;
     border-left: 8px solid #152DFF; }
-  .slick-next:focus::before, .slick-next:hover::before {
+  .slick-next:hover::before {
     border-left: 8px solid #FF1515; }
+  .slick-next:focus {
+    -webkit-filter: drop-shadow(0 0 3px rgba(43, 92, 252, 0.5));
+            filter: drop-shadow(0 0 3px rgba(43, 92, 252, 0.5)); }
   @media (max-width: 1035px) {
     .slick-next {
       top: auto;
-      bottom: 161px;
-      right: 1px; } }
+      bottom: 131px;
+      right: -23px; } }
 
 .slick-dots {
   list-style: none;
