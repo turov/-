@@ -72,9 +72,12 @@
   }
 }
 
-.nav__item:hover .nav__link,
-.nav__link:focus {
+.nav__item:hover .nav__link {
   color: #152DFF;
+}
+
+.nav__link:focus {
+  filter: drop-shadow(0 0 3px rgba(43, 92, 252, 0.5));
 }
 
 .nav__cart {
@@ -86,9 +89,13 @@
   font-size: 18px;
   outline: none;
 
-  &:hover,
-  &:focus {
+  &:hover {
     opacity: 0.5;
+  }
+
+
+  &:focus {
+    filter: drop-shadow(0 0 3px rgba(43, 92, 252, 0.5));
   }
 
   @media (max-width: 1035px) {

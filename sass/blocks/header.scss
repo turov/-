@@ -36,7 +36,7 @@
 .header__wrapper {
   position: relative;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: hidden;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -84,8 +84,12 @@
   letter-spacing: 0.4px;
   outline: none;
 
-  &:hover, &:focus {
+  &:hover {
     color: #FF1515;
+  }
+
+  &:focus {
+    filter: drop-shadow(0 0 3px rgba(43, 92, 252, 0.5));
   }
 
   @media (max-width: 1035px) {

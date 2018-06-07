@@ -16,11 +16,14 @@
   transition: all 0.2s ease-in;
   outline: none;
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: #091ED5;
     border-color: #091ED5;
     color: #ffffff;
+  }
+
+  &:focus {
+    filter: drop-shadow(0 0 8px rgba(43, 92, 252, 0.8));
   }
 
   &:active {
@@ -84,10 +87,13 @@
   outline: none;
 
   &:hover,
-  &:focus,
   &:active {
     background-color: #091ED5;
     border-color: #091ED5;
     color: #ffffff;
+  }
+
+  &:focus {
+    filter: drop-shadow(0 0 8px rgba(43, 92, 252, 0.8));
   }
 }
