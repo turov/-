@@ -253,7 +253,7 @@
 .slick-dots li:first-child button::before {
   content: 'F';
   position: absolute;
-  top: 0;
+  bottom: -7px;
   left: -32px;
   font-family: "Roboto", Arial, sans-serif;
   font-style: normal;
@@ -266,7 +266,7 @@
 .slick-dots li:last-child button::before {
   content: 'D';
   position: absolute;
-  top: 0;
+  bottom: -7px;
   right: -32px;
   font-family: "Roboto", Arial, sans-serif;
   font-style: normal;

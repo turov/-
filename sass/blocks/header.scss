@@ -15,10 +15,6 @@
   animation: smoothScroll 1s forwards;
 }
 
-.header--menu {
-  //background: rgba(0, 0, 0, 0.05);
-}
-
 @keyframes smoothScroll {
   0% {
     transform: translateY(-80px);
@@ -69,6 +65,7 @@
 }
 
 .header__logo span {
+  width: 68px;
   font-weight: bold;
   line-height: 28px;
   font-size: 24px;
