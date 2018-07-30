@@ -301,16 +301,6 @@ template {
 [hidden] {
   display: none; }
 
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/roboto.woff2"), url("../fonts/roboto.woff");
-  font-weight: normal; }
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/robotobold.woff2"), url("../fonts/robotobold.woff");
-  font-weight: bold; }
-
 img {
   max-width: 100%;
   display: block; }
@@ -340,7 +330,7 @@ input[type="radio"].visually-hidden {
 
 .page {
   width: 100%;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-weight: normal;
   font-size: 24px;
   line-height: normal;
